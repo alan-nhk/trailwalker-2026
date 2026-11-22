@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>One hundred kilometres, four people — Oxfam Trailwalker 2026 · Team 0534</title>
+<meta name="description" content="20–21 November 2026. Four people, one hundred kilometres, 32 hours 55 minutes. A record of a promise, mud, a cold front and a sunrise — and a thank you to every donor.">
+<meta property="og:title" content="One hundred kilometres, four people — Oxfam Trailwalker 2026 · Team 0534">
+<meta property="og:description" content="32 hours 55 minutes. Thank you to every donor.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="assets/hero-dawn.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 fill=%27%230B0A09%27/%3E%3Ctext x=%2732%27 y=%2742%27 font-family=%27Georgia,serif%27 font-size=%2720%27 fill=%27%23EDE7DC%27 text-anchor=%27middle%27%3E0534%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/hero-dawn.jpg">
+<link rel="alternate" hreflang="en" href="en.html">
+<link rel="alternate" hreflang="zh-Hant-HK" href="index.html">
+<style>
+/* ============ tokens ============ */
+:root{
+  --paper:#F4F1EB;
+  --paper-2:#EBE6DC;
+  --ink:#16130F;
+  --ink-soft:#4A443D;
+  --muted:#736A5F;
+  --line:rgba(22,19,15,.13);
+  --accent:#B4462A;
+  --night:#0B0A09;
+  --night-2:#12100E;
+  --night-ink:#EDE7DC;
+  --night-soft:#A9A093;
+  --night-line:rgba(237,231,220,.16);
+  --serif:"Noto Serif TC","Source Han Serif TC","Songti TC","Songti SC","STSong",Georgia,"Times New Roman",serif;
+  --sans:"Noto Sans TC","PingFang TC","PingFang SC",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --shell:1180px;
+  --pad:clamp(20px,5vw,56px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--sans);font-weight:300;
+  font-size:clamp(15px,.42vw + 14px,16.5px);line-height:2;
+  letter-spacing:.015em;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{display:block;max-width:100%;height:auto}
+h1,h2,h3,h4,p,figure,blockquote{margin:0}
+::selection{background:rgba(180,70,42,.18)}
+
+/* ============ helpers ============ */
+.shell{width:100%;max-width:var(--shell);margin:0 auto;padding-inline:var(--pad)}
+.label{
+  font-family:var(--sans);font-size:11px;font-weight:500;
+  letter-spacing:.24em;text-transform:uppercase;color:var(--muted);
+}
+.rule{height:1px;background:var(--line);border:0;margin:0}
+
+/* ============ progress ============ */
+.progress{
+  position:fixed;inset:0 auto auto 0;height:2px;width:0;
+  background:var(--accent);z-index:90;transition:width .1s linear;
+}
+
+/* ============ nav ============ */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:80;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:20px;padding:16px var(--pad);
+  font-size:12px;letter-spacing:.18em;text-transform:uppercase;
+  color:#fff;mix-blend-mode:normal;
+  transition:background .45s var(--ease),color .45s var(--ease),backdrop-filter .45s;
+}
+.nav__mark{font-family:var(--serif);font-weight:600;letter-spacing:.22em;font-size:14px}
+.nav__links{display:none;gap:28px}
+.nav__links a{color:inherit;text-decoration:none;opacity:.72;transition:opacity .3s}
+.nav__links a:hover{opacity:1}
+.nav__meta{opacity:.7;font-size:11px}
+.nav.is-solid{
+  background:rgba(244,241,235,.86);
+  -webkit-backdrop-filter:saturate(1.4) blur(14px);
+  backdrop-filter:saturate(1.4) blur(14px);
+  color:var(--ink-soft);border-bottom:1px solid var(--line);
+}
+.nav.is-night{
+  background:rgba(11,10,9,.7);
+  -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+  color:var(--night-ink);border-bottom:1px solid var(--night-line);
+}
+@media(min-width:760px){ .nav__links{display:flex} }
+
+/* ============ hero ============ */
+.hero{
+  position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;
+  padding:0 0 clamp(38px,7vh,72px);color:#fff;isolation:isolate;overflow:hidden;
+}
+.hero__media{position:absolute;inset:0;z-index:-2}
+.hero__media img{width:100%;height:100%;object-fit:cover;object-position:50% 38%;
+  animation:heroDrift 26s var(--ease) both;transform-origin:55% 45%}
+@keyframes heroDrift{from{transform:scale(1.09)}to{transform:scale(1)}}
+.hero::after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:
+    linear-gradient(to top,rgba(8,7,6,.95) 0%,rgba(8,7,6,.78) 26%,rgba(8,7,6,.34) 58%,rgba(8,7,6,.5) 100%),
+    linear-gradient(to right,rgba(8,7,6,.5) 0%,rgba(8,7,6,0) 58%);
+}
+.hero__inner{width:100%;max-width:var(--shell);margin:0 auto;padding-inline:var(--pad)}
+.hero__kicker{
+  display:flex;align-items:center;gap:14px;margin-bottom:clamp(18px,3vh,30px);
+  font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:rgba(255,255,255,.78);
+}
+.hero__kicker::before{content:"";width:34px;height:1px;background:rgba(255,255,255,.5)}
+.hero h1{
+  font-family:var(--serif);font-weight:500;max-width:16em;
+  font-size:clamp(2.35rem,6.6vw,4.7rem);line-height:1.16;letter-spacing:-.015em;
+  text-wrap:balance;
+}
+.hero h1 em{font-style:normal;color:#EFD9C6}
+.hero__sub{
+  margin-top:clamp(22px,3.6vh,34px);max-width:30em;
+  font-size:clamp(.95rem,1.4vw,1.06rem);line-height:2;color:rgba(255,255,255,.84);
+  text-wrap:pretty;
+}
+.hero__stats{
+  margin-top:clamp(30px,5vh,52px);display:flex;flex-wrap:wrap;gap:clamp(18px,4vw,54px);
+  border-top:1px solid rgba(255,255,255,.22);padding-top:20px;
+}
+.hero__stat b{display:block;font-family:var(--serif);font-size:clamp(1.35rem,2.6vw,1.9rem);font-weight:500;letter-spacing:.01em}
+.hero__stat span{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.72)}
+
+/* ============ section heads ============ */
+.section{padding-block:clamp(52px,8.5vh,100px)}
+.section--tight{padding-block:clamp(40px,6.5vh,72px)}
+.section-head{display:flex;align-items:baseline;gap:18px;margin-bottom:clamp(30px,5vh,52px)}
+.section-head .num{font-family:var(--serif);font-size:12px;letter-spacing:.2em;color:var(--accent)}
+
+/* ============ thanks ============ */
+.thanks{background:var(--paper);position:relative}
+.thanks__intro{
+  display:grid;gap:clamp(24px,4vw,54px);
+  grid-template-columns:1fr;align-items:end;
+  margin-bottom:clamp(40px,7vh,72px);
+}
+@media(min-width:900px){.thanks__intro{grid-template-columns:1.15fr .85fr}}
+.thanks h2{
+  font-family:var(--serif);font-weight:500;letter-spacing:-.01em;
+  font-size:clamp(1.75rem,4.4vw,3.05rem);line-height:1.42;text-wrap:balance;
+}
+.thanks h2 .thin{color:var(--muted)}
+.thanks__note{font-size:.94rem;line-height:2.1;color:var(--ink-soft);max-width:38ch}
+.thanks__note b{font-weight:500;color:var(--ink)}
+.donors{
+  list-style:none;margin:0;padding:0;
+  display:grid;grid-template-columns:1fr;gap:0;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+}
+@media(min-width:620px){.donors{grid-template-columns:1fr 1fr}}
+@media(min-width:980px){.donors{grid-template-columns:1fr 1fr 1fr}}
+.donors li{
+  display:flex;align-items:baseline;gap:14px;
+  padding:15px 4px 14px 0;border-bottom:1px solid var(--line);
+  font-family:var(--serif);font-size:clamp(1rem,1.5vw,1.13rem);letter-spacing:.005em;
+  transition:color .3s var(--ease),padding-left .3s var(--ease);
+  position:relative;
+}
+.donors li::before{
+  content:"";width:5px;height:5px;flex:0 0 5px;border-radius:50%;
+  background:var(--accent);opacity:.35;transform:translateY(-3px);
+  transition:opacity .3s var(--ease),transform .3s var(--ease);
+}
+.donors li:hover{color:var(--accent);padding-left:6px}
+.donors li:hover::before{opacity:1;transform:translateY(-3px) scale(1.35)}
+.donors li span.sub{font-family:var(--sans);font-size:11.5px;letter-spacing:.08em;color:var(--muted);font-weight:300}
+@media(min-width:980px){.donors li{padding-block:17px 16px}}
+.thanks__foot{
+  margin-top:clamp(28px,5vh,44px);display:flex;flex-wrap:wrap;gap:10px 28px;
+  font-size:11.5px;letter-spacing:.1em;color:var(--muted)
+}
+
+/* ============ act header ============ */
+.act{
+  padding-block:clamp(40px,7vh,80px) clamp(18px,3vh,32px);
+  display:grid;grid-template-columns:1fr;gap:14px;align-items:end;
+}
+.act__no{
+  font-family:var(--serif);font-size:clamp(2.2rem,5.4vw,3.6rem);line-height:.9;
+  color:var(--line);font-weight:400;letter-spacing:-.02em;
+}
+.act__title{font-family:var(--serif);font-weight:500;font-size:clamp(1.45rem,3.2vw,2.2rem);letter-spacing:.02em}
+.act__en{font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--muted)}
+@media(min-width:760px){
+  .act{grid-template-columns:auto 1fr auto;gap:26px;border-bottom:1px solid var(--line);padding-bottom:20px}
+  .act__en{text-align:right}
+}
+
+/* ============ chapter ============ */
+.chapter{
+  display:grid;grid-template-columns:1fr;gap:clamp(20px,3vw,34px);
+  padding-block:clamp(26px,5vh,54px);
+}
+@media(min-width:900px){
+  .chapter:not(.split){grid-template-columns:minmax(230px,.84fr) minmax(0,1.56fr);gap:clamp(36px,5vw,72px);align-items:start}
+  .chapter:not(.split) .chapter__head{position:sticky;top:104px}
+}
+.chapter__head{margin-bottom:clamp(14px,2.4vh,22px)}
+.chapter__kicker{
+  font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);
+  display:block;margin-bottom:12px
+}
+.chapter h3{
+  font-family:var(--serif);font-weight:500;letter-spacing:0;
+  font-size:clamp(1.25rem,2.35vw,1.6rem);line-height:1.6;text-wrap:balance
+}
+.reading{max-width:36em}
+.reading p+p{margin-top:1.3em}
+.reading p{color:var(--ink-soft)}
+.reading p.lead{color:var(--ink);font-size:1.06em}
+.reading strong{font-weight:500;color:var(--ink);box-shadow:inset 0 -0.55em 0 rgba(180,70,42,.13)}
+
+/* ============ figures ============ */
+.fig{margin:0}
+.fig img{width:100%;cursor:zoom-in;transition:transform 1.1s var(--ease),filter .6s}
+.fig:hover img{transform:scale(1.012)}
+.fig figcaption{
+  display:flex;gap:14px;align-items:baseline;
+  margin-top:12px;font-size:11.5px;letter-spacing:.1em;color:var(--muted);line-height:1.7
+}
+.fig figcaption i{font-style:normal;color:var(--accent);letter-spacing:.16em;font-size:10px;flex:0 0 auto}
+
+.fig--full{margin-block:clamp(36px,7vh,72px)}
+.fig--full img{width:100%;max-height:82svh;object-fit:cover;object-position:50% 42%}
+.fig--full figcaption{max-width:var(--shell);margin-inline:auto;padding-inline:var(--pad)}
+
+.fig--portrait{max-width:clamp(270px,40vw,440px);margin-inline:auto;margin-block:clamp(36px,7vh,72px)}
+.fig--portrait img{max-height:none}
+
+.split .fig img{max-height:78svh;object-fit:cover;object-position:50% 45%}
+
+.duo{display:grid;gap:clamp(16px,3vw,28px);margin-block:clamp(34px,7vh,64px)}
+@media(min-width:760px){.duo{grid-template-columns:1fr 1fr;align-items:start}}
+.duo .fig img{aspect-ratio:4/5;object-fit:cover}
+.duo .fig--wide img{aspect-ratio:4/3}
+
+/* split: prose + image */
+.split{display:grid;gap:clamp(26px,4vw,52px);align-items:center}
+@media(min-width:900px){.split{grid-template-columns:1fr 1fr;align-items:center}}
+.split--narrow{grid-template-columns:1fr}
+@media(min-width:900px){
+  .split--narrow{grid-template-columns:.85fr 1.15fr}
+  .split--narrow .fig img{aspect-ratio:3/4;object-fit:cover}
+}
+.offset-down{margin-top:clamp(0px,6vw,90px)}
+
+/* quote */
+.pull{
+  margin-block:clamp(48px,9vh,96px);max-width:22em;
+  font-family:var(--serif);font-weight:400;letter-spacing:.005em;
+  font-size:clamp(1.5rem,3.9vw,2.6rem);line-height:1.62;color:var(--ink);
+  text-wrap:balance;
+}
+.pull--center{margin-inline:auto;text-align:center;max-width:24em}
+.pull small{display:block;margin-top:22px;font-family:var(--sans);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.pull--night{color:var(--night-ink)}
+.pull--night small{color:var(--night-soft)}
+
+/* ============ night ============ */
+.night{
+  background:var(--night);color:var(--night-ink);
+  position:relative;isolation:isolate;
+}
+.night .reading p{color:#B9B1A4}
+.night .reading p.lead{color:var(--night-ink)}
+.night .reading strong{color:var(--night-ink);box-shadow:inset 0 -0.55em 0 rgba(180,70,42,.3)}
+.night .act__no{color:rgba(237,231,220,.16)}
+.night .act{border-color:var(--night-line)}
+.night .act__en{color:var(--night-soft)}
+.night .fig figcaption{color:var(--night-soft)}
+.night .chapter__kicker{color:#C98A6A}
+.night .label{color:var(--night-soft)}
+.night .rule{background:var(--night-line)}
+
+/* image grid strip */
+.strip{display:grid;gap:clamp(10px,2vw,18px);margin-block:clamp(36px,7vh,70px)}
+@media(min-width:760px){.strip{grid-template-columns:1.25fr .75fr;align-items:end}}
+.strip .fig:last-child img{aspect-ratio:3/4;object-fit:cover}
+.strip .fig:first-child img{aspect-ratio:4/3;object-fit:cover}
+
+/* ============ stats band ============ */
+.band{
+  border-block:1px solid var(--line);background:var(--paper-2);
+}
+.band__grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:1px;
+  background:var(--line);
+}
+@media(min-width:760px){.band__grid{grid-template-columns:repeat(4,1fr)}}
+.band__cell{background:var(--paper-2);padding:clamp(24px,4vw,44px) clamp(18px,3vw,34px)}
+.band__cell b{
+  display:block;font-family:var(--serif);font-weight:400;
+  font-size:clamp(1.7rem,4vw,2.7rem);line-height:1.1;letter-spacing:-.01em
+}
+.band__cell span{display:block;margin-top:10px;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+
+/* ============ finish ============ */
+.finish{
+  background:var(--night);color:var(--night-ink);position:relative;
+  padding-block:clamp(70px,13vh,140px);overflow:hidden;
+}
+.finish::before{
+  content:"";position:absolute;inset:auto 0 0 0;height:1px;background:var(--night-line);
+}
+.finish__inner{width:100%;max-width:var(--shell);margin:0 auto;padding-inline:var(--pad)}
+.timebig{
+  font-family:var(--serif);font-weight:300;
+  font-size:clamp(3.6rem,13.5vw,9.5rem);line-height:.94;letter-spacing:-.03em;
+  display:flex;align-items:baseline;gap:.18em;flex-wrap:wrap;margin-top:clamp(14px,2.4vh,22px)
+}
+.timebig span{font-size:.17em;letter-spacing:.28em;text-transform:uppercase;color:var(--night-soft);font-family:var(--sans)}
+.finish p{max-width:34em;color:#B9B1A4;margin-top:clamp(22px,4vh,36px);line-height:2}
+.finish .label{color:var(--night-soft)}
+.finish__row{
+  display:grid;gap:clamp(22px,4vw,60px);align-items:end;
+}
+@media(min-width:900px){.finish__row{grid-template-columns:auto 1fr}}
+
+/* ============ film ============ */
+.film{margin:clamp(24px,4vh,40px) 0 0}
+.film__frame{position:relative;aspect-ratio:16/9;background:#0B0A09;overflow:hidden}
+.film__frame img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.film__frame:hover img{transform:scale(1.015)}
+.film__play{
+  position:absolute;inset:0;border:0;cursor:pointer;padding:clamp(16px,2.4vw,28px);
+  display:flex;align-items:flex-end;justify-content:flex-start;text-align:left;
+  background:linear-gradient(to top,rgba(8,7,6,.72),rgba(8,7,6,.06) 46%,rgba(8,7,6,.26));
+  transition:background .5s var(--ease);
+}
+.film__play:hover{background:linear-gradient(to top,rgba(8,7,6,.6),rgba(8,7,6,.02) 46%,rgba(8,7,6,.18))}
+.film__cta{display:flex;align-items:center;gap:clamp(12px,1.6vw,18px)}
+.film__btn{
+  width:clamp(46px,5.4vw,60px);aspect-ratio:1;border:1px solid rgba(255,255,255,.8);
+  border-radius:50%;display:grid;place-items:center;color:#fff;flex:0 0 auto;
+  -webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);
+  transition:transform .5s var(--ease),border-color .5s,background .5s;background:rgba(255,255,255,.08)
+}
+.film__play:hover .film__btn{transform:scale(1.08);border-color:#fff;background:#fff}
+.film__play:hover .film__btn svg{fill:#16130F}
+.film__btn svg{width:24%;margin-left:8%;fill:#fff;transition:fill .4s}
+.film__txt{color:#fff;font-size:11px;letter-spacing:.24em;text-transform:uppercase;line-height:1.9}
+.film__txt b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(.95rem,1.5vw,1.1rem);letter-spacing:.06em;text-transform:none}
+.film__frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.film figcaption{display:flex;gap:14px;align-items:baseline;margin-top:12px;font-size:11.5px;letter-spacing:.1em;color:var(--muted);line-height:1.7}
+.film figcaption i{font-style:normal;color:var(--accent);letter-spacing:.16em;font-size:10px;flex:0 0 auto}
+
+/* ============ closing ============ */
+.closing{background:var(--paper-2)}
+.closing h2{
+  font-family:var(--serif);font-weight:500;font-size:clamp(1.7rem,4.2vw,2.9rem);
+  line-height:1.5;letter-spacing:-.01em;text-wrap:balance;max-width:26em
+}
+.closing__grid{display:grid;gap:clamp(28px,5vw,60px)}
+@media(min-width:900px){.closing__grid{grid-template-columns:1.1fr .9fr;align-items:start}}
+.closing__body p{color:var(--ink-soft);max-width:34em}
+.closing__body p+p{margin-top:1.3em}
+.sign{
+  margin-top:clamp(28px,5vh,44px);padding-top:20px;border-top:1px solid var(--line);
+  font-size:11.5px;letter-spacing:.14em;color:var(--muted);line-height:2.2
+}
+.mini-donors{
+  columns:2;column-gap:28px;margin:0;padding:0;list-style:none;
+  font-family:var(--serif);font-size:14.5px;line-height:2.1;color:var(--ink-soft)
+}
+@media(max-width:560px){.mini-donors{columns:1}}
+.mini-donors li{break-inside:avoid}
+
+/* ============ footer ============ */
+.foot{background:var(--night);color:var(--night-soft);padding-block:clamp(44px,7vh,72px)}
+.foot__grid{display:flex;flex-wrap:wrap;gap:26px 54px;justify-content:space-between;align-items:flex-end}
+.foot b{display:block;font-family:var(--serif);font-weight:500;color:var(--night-ink);font-size:1.05rem;letter-spacing:.06em}
+.foot small{display:block;margin-top:8px;font-size:11px;letter-spacing:.12em;line-height:2}
+.foot .totop{color:var(--night-ink);text-decoration:none;font-size:11px;letter-spacing:.2em;text-transform:uppercase;border-bottom:1px solid var(--night-line);padding-bottom:4px}
+
+/* ============ reveal ============ */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal[data-d="1"]{transition-delay:.09s}
+.reveal[data-d="2"]{transition-delay:.18s}
+.reveal[data-d="3"]{transition-delay:.27s}
+
+/* ============ lightbox ============ */
+.lb{
+  position:fixed;inset:0;z-index:120;display:flex;align-items:center;justify-content:center;
+  background:rgba(8,7,6,.94);padding:clamp(14px,4vw,48px);
+  opacity:0;pointer-events:none;transition:opacity .35s var(--ease);
+  -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)
+}
+.lb.on{opacity:1;pointer-events:auto}
+.lb img{max-width:100%;max-height:88svh;object-fit:contain;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.lb button{
+  position:absolute;top:16px;right:18px;background:none;border:0;color:#fff;
+  font-size:26px;line-height:1;cursor:pointer;opacity:.65;padding:8px
+}
+.lb button:hover{opacity:1}
+
+/* ---- English typographic adjustments (Latin needs less width per line) ---- */
+html[lang="en"] .thanks h2{font-size:clamp(1.4rem,2.6vw,2.15rem);line-height:1.5}
+@media(min-width:900px){html[lang="en"] .thanks__intro{grid-template-columns:1.32fr .68fr}}
+html[lang="en"] .closing h2{font-size:clamp(1.5rem,3vw,2.3rem);line-height:1.4}
+html[lang="en"] .act__title{font-size:clamp(1.3rem,2.5vw,1.8rem)}
+html[lang="en"] .chapter h3{font-size:clamp(1.1rem,1.75vw,1.32rem);line-height:1.45}
+html[lang="en"] .pull{font-size:clamp(1.3rem,3vw,2.05rem);line-height:1.5}
+html[lang="en"] .reading{max-width:34em}
+html[lang="en"] .hero h1{font-size:clamp(2.1rem,5.4vw,4.1rem);max-width:14em;line-height:1.1}
+html[lang="en"] .hero__sub{max-width:32em}
+html[lang="en"] .donors li{font-family:var(--sans);font-size:clamp(.92rem,1.15vw,.98rem);letter-spacing:.02em}
+html[lang="en"] .mini-donors{font-family:var(--sans);font-size:13.5px}
+html[lang="en"] .film__txt b{letter-spacing:.02em}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .hero__media img{animation:none}
+  .fig img{transition:none}
+}
+</style>
+</head>
+<body id="top">
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav__mark">0534</div>
+  <nav class="nav__links" aria-label="Page navigation">
+    <a href="#thanks">Thanks</a>
+    <a href="#story">Story</a>
+    <a href="#finish">Finish</a>
+    <a href="index.html" hreflang="zh-Hant-HK" lang="zh-Hant-HK">中文</a>
+  </nav>
+  <div class="nav__meta">Trailwalker 2026</div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" aria-label="Cover">
+  <div class="hero__media">
+    <img src="assets/hero-dawn.jpg" alt="Before dawn, four people with headtorches on a ridge, an orange sunrise behind them">
+  </div>
+  <div class="hero__inner">
+    <div class="hero__kicker">Oxfam Trailwalker 2026 · Team 0534</div>
+    <h1>One hundred kilometres,<br>four people,<br>one <em>unspoken</em> promise.</h1>
+    <p class="hero__sub">20–21 November 2026. It took us 32 hours 55 minutes to walk those hundred kilometres. This page is for every one of you who made it possible.</p>
+    <div class="hero__stats">
+      <div class="hero__stat"><b>100</b><span>Kilometres</span></div>
+      <div class="hero__stat"><b>32:55</b><span>Finish time</span></div>
+      <div class="hero__stat"><b>4</b><span>People</span></div>
+      <div class="hero__stat"><b>17</b><span>Donors</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THANKS ============ -->
+<section class="section thanks" id="thanks">
+  <div class="shell">
+    <div class="section-head reveal">
+      <span class="label">With thanks</span>
+    </div>
+
+    <div class="thanks__intro">
+      <h2 class="reveal">Nobody walks a hundred kilometres<br>on four pairs of legs alone.<br><span class="thin">You carried us to the finish.</span></h2>
+      <p class="thanks__note reveal" data-d="1">
+        First, thank you to every donor listed below. Your trust and support are what carried this fundraiser through — <b>every gift was a reason to keep walking on a mountain in the dark.</b>
+        Thank you, too, to the support crews, sponsors and volunteers along the way. We remember the hot food, and the smiles.
+      </p>
+    </div>
+
+    <ul class="donors reveal" data-d="1">
+      <li>AU Wai Chun</li>
+      <li>Bee NG <span class="sub">Bee's Diamonds</span></li>
+      <li>CHONG Man Ting</li>
+      <li>CHOW Chi Man</li>
+      <li>CHOY Wa Kwan</li>
+      <li>Christina WOO <span class="sub">Power Jewelry</span></li>
+      <li>Elvis KWOK</li>
+      <li>Huang Weiming</li>
+      <li>Irene</li>
+      <li>Krishnamurthi Vishwanath</li>
+      <li>LAU Sau Wan</li>
+      <li>LEE Shu Pang</li>
+      <li>LEUNG Hon Sing</li>
+      <li>Maisy LEUNG</li>
+      <li>Timothy KWAN</li>
+      <li>Virginia PANG</li>
+      <li>ZHAO Qingmei</li>
+    </ul>
+
+    <div class="thanks__foot reveal">
+      <span>17 in total</span>
+      <span>In no particular order · listed alphabetically</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STORY ============ -->
+<div id="story">
+
+<!-- ACT I -->
+<section class="section section--tight">
+  <div class="shell">
+    <div class="act reveal">
+      <div class="act__no">01</div>
+      <h2 class="act__title">It began with an idea</h2>
+      <div class="act__en">2024 — 2026 · Before the start</div>
+    </div>
+
+    <article class="chapter">
+      <div class="chapter__head reveal">
+        <span class="chapter__kicker">Chapter 01</span>
+        <h3>An idea</h3>
+      </div>
+      <div class="reading reveal" data-d="1">
+        <p class="lead">In 2024 the four of us started planning this. Back then none of us could really run; a hundred kilometres was just a number that sounded very far away.</p>
+        <p>At a gathering someone said: why don't we do Trailwalker? I said yes on the spot. Saying yes is easy — a word, a nod, not even a second.</p>
+        <p>But when it came to actually entering, I backed out. A hundred kilometres is not a short walk. I asked myself: can I finish? And if I don't, then what? The fear was very concrete — concrete enough that you would rather not start.</p>
+        <p><strong>So in 2025, I didn't enter.</strong></p>
+      </div>
+    </article>
+
+    <figure class="fig fig--full reveal">
+      <img src="assets/training-ridge.jpg" alt="Five people beside a railing on a ridge, the dense city and sea behind them" data-full="assets/training-ridge.jpg" loading="lazy">
+      <figcaption><i>2026.09.12</i><span>A training day. From this ridge you can see the whole city. We had no idea where this road would take us.</span></figcaption>
+    </figure>
+
+    <article class="chapter">
+      <div class="chapter__head reveal">
+        <span class="chapter__kicker">Chapter 02</span>
+        <h3>The year it didn't happen</h3>
+      </div>
+      <div class="reading reveal">
+        <p>In 2025, after the fire at Wang Fuk Court, the event was finally called off. Places, training, plans — everything stopped where it stood.</p>
+        <p>I remember not feeling especially relieved, and not especially disappointed. Only that some things are not ours to decide.</p>
+      </div>
+    </article>
+
+    <article class="chapter">
+      <div class="chapter__head reveal">
+        <span class="chapter__kicker">Chapter 03</span>
+        <h3>Reserve</h3>
+      </div>
+      <div class="reading reveal">
+        <p class="lead">In 2026 the event returned. A teammate dropped out, and a place opened up.</p>
+        <p>By then I had been preparing for a while — not to fill someone's shoes, but because I finally wanted to try. To find out whether the person who was too afraid to enter in 2025 could actually do it.</p>
+        <p>So I joined officially as the reserve and became the fourth person. And then we took the first step of those hundred kilometres.</p>
+      </div>
+    </article>
+
+    <!-- split: captain arm -->
+    <div class="chapter split split--narrow">
+      <figure class="fig reveal">
+        <img src="assets/captain-arm.jpg" alt="The captain's arm in a blue sling, hanging from a white strap around his neck" data-full="assets/captain-arm.jpg" loading="lazy">
+        <figcaption><i>2026.09.26</i><span>The captain's arm.</span></figcaption>
+      </figure>
+      <div class="reveal" data-d="1">
+        <div class="chapter__head">
+          <span class="chapter__kicker">Chapter 04</span>
+          <h3>A difficult start</h3>
+        </div>
+        <div class="reading">
+          <p>Training did not go as smoothly as we imagined. Halfway through, the captain broke his arm; it hung against his chest in a sling. When you can't even put on your own backpack without help, we did wonder: do we postpone again?</p>
+          <p>We had planned a 50 km race as a rehearsal. In the end we couldn't go.</p>
+          <p>Before the event there was no time left. The four of us could no longer train together; we trained separately, checked in, and kept an eye on each other — did you run today? Were you on the hill last week?</p>
+          <p>Four people, four schedules. The only thing we shared was the same date.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="duo reveal">
+      <figure class="fig fig--wide">
+        <img src="assets/training-bus.jpg" alt="Four people on a bus, green hills outside the window" data-full="assets/training-bus.jpg" loading="lazy">
+        <figcaption><i>2026.09.19</i><span>The bus out. We could still laugh then.</span></figcaption>
+      </figure>
+      <figure class="fig fig--wide offset-down">
+        <img src="assets/training-dusk.jpg" alt="On a mountain road, three people against an orange sky" data-full="assets/training-dusk.jpg" loading="lazy">
+        <figcaption><i>2026.09.20</i><span>Sunrise. On training days we were on the hill before daylight; the sun was our only signal to stop.</span></figcaption>
+      </figure>
+    </div>
+
+    <figure class="fig fig--portrait reveal">
+      <img src="assets/training-race.jpg" alt="Four people holding medals in front of a finish-line backdrop" data-full="assets/training-race.jpg" loading="lazy">
+      <figcaption><i>2026.10.19</i><span>October, our last practice race. The last time we "finished" anything before the real start.</span></figcaption>
+    </figure>  </div>
+</section>
+
+<!-- ACT II -->
+<section class="section section--tight">
+  <div class="shell">
+    <div class="act reveal">
+      <div class="act__no">02</div>
+      <h2 class="act__title">Standing on the start line</h2>
+      <div class="act__en">20 Nov 2026 · Start</div>
+    </div>
+
+    <article class="chapter">
+      <div class="chapter__head reveal">
+        <span class="chapter__kicker">Chapter 05</span>
+        <h3>The start line, in November</h3>
+      </div>
+      <div class="reading reveal">
+        <p class="lead">And then, at last, all four of us were standing on the start line.</p>
+        <p>The moment we stepped onto it, another challenge appeared. The weather turned — the conditions were worse than we imagined, worse than we had prepared for.</p>
+        <p>Worse still, we had no idea there was no bag drop. The four of us had to deal with our luggage before the start, and the plan for the support points collapsed with it. Where each checkpoint was, who carried what, what time they would arrive — all of it had to be worked out again.</p>
+        <p>We could have chosen not to start. But we were already on the line, so we decided: start first, work it out step by step.</p>
+      </div>
+    </article>
+
+    <figure class="fig fig--portrait reveal">
+      <img src="assets/start-line.jpg" alt="Four people with race numbers at the start line, 0534 on their bibs" data-full="assets/start-line.jpg" loading="lazy">
+      <figcaption><i>20 November</i><span>The start. Race numbers 0534A to 0534D. Shortly after this photograph, the weather turned.</span></figcaption>
+    </figure>
+
+    <div class="split">
+      <div class="reveal">
+        <div class="chapter__head">
+          <span class="chapter__kicker">Chapter 06</span>
+          <h3>Mud</h3>
+        </div>
+        <div class="reading">
+          <p>After the start the weather got worse. Rain ran down the trail, and the earth turned to mud.</p>
+          <p>Every step was slippery; every step you had to think about where to put your foot. We went carefully, but you cannot avoid the occasional fall — and when you go down, your whole leg is mud.</p>
+          <p>One of us began to show signs of hypothermia, shivering without stopping. We kept warm the simplest way we could: more layers, a slow jog, letting the body make its own heat. Jogging to stay warm, taking the cold, one step at a time towards the first support point.</p>
+          <p>At the support point we bought some food, let our bodies warm up, and set off again.</p>
+        </div>
+      </div>
+      <figure class="fig reveal" data-d="1">
+        <img src="assets/mud.jpg" alt="The trail turned to mud; people in clear rain ponchos walking through it" data-full="assets/mud.jpg" loading="lazy">
+        <figcaption><i>20 November</i><span>Mud. Every step, the shoes get heavier.</span></figcaption>
+      </figure>
+    </div>
+
+    <article class="chapter">
+      <div class="chapter__head reveal">
+        <span class="chapter__kicker">Chapter 07</span>
+        <h3>Kei Ling Ha</h3>
+      </div>
+      <div class="reading reveal">
+        <p class="lead">It was at Kei Ling Ha that our support crew appeared.</p>
+        <p>Only then did things really turn around. Hot food, fresh food, proper care for our bodies; and warming gear, so that we could be warm for a while.</p>
+        <p>Someone handed you something hot. Only then did you realise how cold you had been.</p>
+      </div>
+    </article>
+
+    <figure class="fig fig--full reveal">
+      <img src="assets/support-keilingha.jpg" alt="The Kei Ling Ha checkpoint at night; the four of them and their support crew in the crowd, all smiling" data-full="assets/support-keilingha.jpg" loading="lazy">
+      <figcaption><i>20 November · Kei Ling Ha</i><span>The support crew. Seeing familiar faces in the dark was the warmest moment of the night.</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+</div><!-- /#story -->
+
+<!-- ============ NIGHT ============ -->
+<section class="night" aria-label="Night">
+  <div class="shell">
+    <div class="act reveal">
+      <div class="act__no">03</div>
+      <h2 class="act__title" style="color:var(--night-ink)">The coldest night</h2>
+      <div class="act__en">20 — 21 Nov 2026 · Night</div>
+    </div>
+
+    <article class="chapter">
+      <div class="chapter__head reveal">
+        <span class="chapter__kicker">Chapter 08</span>
+        <h3>The coldest day in Hong Kong</h3>
+      </div>
+      <div class="reading reveal">
+        <p class="lead">After dark the temperature dropped again. We heard it was the coldest day of the year in Hong Kong.</p>
+        <p>Cold and exhausted, it is very easy to fall asleep. All of us were a little hazy, following one another slowly. A few times I lost consciousness for a moment; walking on, the body would sway.</p>
+        <p>I remember that night very clearly, and not at all.</p>
+      </div>
+    </article>
+
+    <div class="strip reveal">
+      <figure class="fig">
+        <img src="assets/night-feet.jpg" alt="In the dark, a headtorch lighting only the road ahead and a pair of feet" data-full="assets/night-feet.jpg" loading="lazy">
+        <figcaption><i>11.20</i><span>The only thing visible is the few steps your headtorch reaches.</span></figcaption>
+      </figure>
+      <figure class="fig">
+        <img src="assets/training-night.jpg" alt="Three people with headtorches at night on the mountain" data-full="assets/training-night.jpg" loading="lazy">
+        <figcaption><i>2026.10.11</i><span>Night, in training. The real one was colder than this.</span></figcaption>
+      </figure>
+    </div>
+
+    <blockquote class="pull pull--center pull--night reveal">
+      “Four people, one behind the other.<br>Nobody spoke.<br>Nobody stopped.”
+      <small>20 November · Late night</small>
+    </blockquote>
+
+    <article class="chapter">
+      <div class="chapter__head reveal">
+        <span class="chapter__kicker">Chapter 09</span>
+        <h3>Sunrise</h3>
+      </div>
+      <div class="reading reveal">
+        <p>When the sun slowly came up, we began to wake properly, and felt a little more human.</p>
+        <p>The organisers started giving out hot drinks, and many selfless sponsors and suppliers brought better food. Once something hot was inside you, you belonged to yourself again.</p>
+      </div>
+    </article>
+
+    <figure class="fig fig--full reveal">
+      <img src="assets/dawn-noodles.jpg" alt="Three people holding cup noodles, smiling at the camera" data-full="assets/dawn-noodles.jpg" loading="lazy">
+      <figcaption><i>21 November</i><span>Something hot was enough to carry you to the next section.</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ ACT IV ============ -->
+<section class="section section--tight">
+  <div class="shell">
+    <div class="act reveal">
+      <div class="act__no">04</div>
+      <h2 class="act__title">From winter to summer in a day</h2>
+      <div class="act__en">21 Nov 2026 · Day two</div>
+    </div>
+
+    <article class="chapter">
+      <div class="chapter__head reveal">
+        <span class="chapter__kicker">Chapter 10</span>
+        <h3>The second day's sun</h3>
+      </div>
+      <div class="reading reveal">
+        <p class="lead">The second morning was warm. But nobody expected the afternoon sun to be so fierce — the whole mountain turned into summer.</p>
+        <p>In a single day we went through extreme cold and extreme heat. The night before we were shivering; the next day we were looking for shade.</p>
+        <p>Luckily we had looked after ourselves along the way, and none of us ran a fever. We all had a bit of a cold, but nothing serious, so we could keep going.</p>
+      </div>
+    </article>
+
+    <article class="chapter">
+      <div class="chapter__head reveal">
+        <span class="chapter__kicker">Chapter 11</span>
+        <h3>Blisters</h3>
+      </div>
+      <div class="reading reveal">
+        <p>By the middle and later sections, the muscles had stopped cooperating.</p>
+        <p>The captain was injured; a mild pain had set in, and he could only move slowly. Everyone was getting blisters, and our pace kept dropping.</p>
+        <p>And at the same time, the wish to be at the finish grew more urgent. The more urgent you feel, the more tired you get.</p>
+      </div>
+    </article>
+
+    <blockquote class="pull reveal">
+      “The hardest part of a hundred kilometres<br>is not the climb.<br>It is knowing how slow you are,<br>and going on anyway.”
+    </blockquote>
+
+    <div class="chapter split">
+      <div class="reveal">
+        <div class="chapter__head">
+          <span class="chapter__kicker">Chapter 12</span>
+          <h3>Tai Mo Shan</h3>
+        </div>
+        <div class="reading">
+          <p>Then came the biggest gate of all: Tai Mo Shan.</p>
+          <p>It is a slope with no visible end. When we reached the top, the four of us lay down on the grass and nobody wanted to speak. The wind was strong, the sky was blue, and we had just put the highest mountain in Hong Kong under our feet.</p>
+          <p>Taken.</p>
+        </div>
+      </div>
+      <figure class="fig reveal" data-d="1">
+        <img src="assets/tai-mo-shan.jpg" alt="The white radar station on the summit of Tai Mo Shan, one person walking up the slope" data-full="assets/tai-mo-shan.jpg" loading="lazy">
+        <figcaption><i>21 November</i><span>Tai Mo Shan. That slope cannot be walked in one breath.</span></figcaption>
+      </figure>
+    </div>
+
+    <figure class="fig fig--full reveal">
+      <img src="assets/grass-rest.jpg" alt="Four people lying on the grass by the Tai Mo Shan trail sign" data-full="assets/grass-rest.jpg" loading="lazy">
+      <figcaption><i>21 November · Tai Mo Shan</i><span>Five minutes flat on our backs. For one moment, the body was allowed to let go.</span></figcaption>
+    </figure>
+
+    <div class="chapter split">
+      <div class="reveal">
+        <div class="chapter__head">
+          <span class="chapter__kicker">Chapter 13</span>
+          <h3>Rotary Park</h3>
+        </div>
+        <div class="reading">
+          <p>Coming down from Tai Mo Shan to Rotary Park, the second support crew appeared.</p>
+          <p>They were full of energy, and walked a stretch with us. Because they were there, our tired bodies and our mood picked up a little joy, and a little strength.</p>
+          <p><strong>It turns out that when someone is waiting for you, the road gets shorter.</strong></p>
+        </div>
+      </div>
+      <figure class="fig reveal" data-d="1">
+        <img src="assets/support-fulunpark.jpg" alt="The four of them with their support crew at Rotary Park, hard sunlight, everyone smiling" data-full="assets/support-fulunpark.jpg" loading="lazy">
+        <figcaption><i>21 November · Rotary Park</i><span>The second support crew. Their laughter was the fuel for our last ten kilometres.</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINISH ============ -->
+<section class="finish" id="finish">
+  <div class="finish__inner">
+    <div class="label reveal">21 November · The finish</div>
+    <div class="timebig reveal" data-d="1">32:55<span>Hours · Minutes</span></div>
+    <p class="reveal" data-d="2">At the finish, everyone was overcome — and none of us quite believed we had really done those hundred kilometres. I think that was the most exhilarating moment of the whole thing. The road was unforgettable; and it was finally over, and the body could rest for a moment.</p>
+  </div>
+</section>
+
+<section class="section section--tight" style="padding-top:clamp(32px,6vh,64px)">
+  <div class="shell">
+    <figure class="fig fig--full reveal" style="margin-block:0">
+      <img src="assets/finish-crossing.jpg" alt="Four people with their hands in the air, crossing the yellow gantry marked FINISH" data-full="assets/finish-crossing.jpg" loading="lazy">
+      <figcaption><i>21 November · Evening</i><span>The finish gantry. Four people, hands in the air, across the line: one hundred kilometres, done.</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ STATS BAND ============ -->
+<section class="band" aria-label="Record">
+  <div class="shell" style="padding-inline:0">
+    <div class="band__grid">
+      <div class="band__cell reveal"><b>100 km</b><span>Total distance</span></div>
+      <div class="band__cell reveal" data-d="1"><b>32:55</b><span>Official finish time</span></div>
+      <div class="band__cell reveal" data-d="2"><b>0534</b><span>Team number</span></div>
+      <div class="band__cell reveal" data-d="3"><b>17</b><span>Donors</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OFFICIAL RECORD ============ -->
+<section class="section section--tight">
+  <div class="shell">
+    <div class="section-head reveal">
+      <span class="label">The official record</span>
+    </div>
+    <figure class="fig fig--full reveal">
+      <img src="assets/finish-cert.jpg" alt="Four people in front of the finish backdrop; the screen shows team 0534, 100 km, 32 h 55 m" data-full="assets/finish-cert.jpg" loading="lazy">
+      <figcaption><i>21 November · The finish</i><span>The screen at the finish: 0534 · 100 km · Completed the Challenge · total time 32 hours 55 minutes.</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ FILM ============ -->
+<section class="section section--tight" id="film">
+  <div class="shell">
+    <div class="section-head reveal">
+      <span class="label">The full record · the film</span>
+    </div>
+    <h2 class="reveal" style="font-family:var(--serif);font-weight:500;font-size:clamp(1.4rem,3vw,2.1rem);line-height:1.55;letter-spacing:-.005em;margin-bottom:clamp(20px,3.6vh,32px)">
+      If you have forty minutes —<br>this is all of it.
+    </h2>
+    <figure class="film reveal" data-d="1">
+      <div class="film__frame" id="filmFrame" data-video="w8qxdLhgOEM" role="button" tabindex="0" aria-label="Play the full forty-minute record of Trailwalker 2026">
+        <img src="assets/video-cover.jpg" alt="Film cover: a road beside a reservoir in the rain, a runner in a red jacket walking on">
+        <button class="film__play" type="button" tabindex="-1" aria-hidden="true">
+          <span class="film__cta">
+            <span class="film__btn"><svg viewBox="0 0 10 12" aria-hidden="true"><polygon points="0,0 10,6 0,12"></polygon></svg></span>
+            <span class="film__txt"><b>Watch the film</b>Play · 40 min</span>
+          </span>
+        </button>
+      </div>
+      <figcaption><i>40 min</i><span>The full record of the hundred kilometres. The film's title uses the watch time, 32 h 11 m; the official team result on the day was 32 h 55 m.</span></figcaption>
+    </figure>
+    <p class="reveal" style="margin-top:18px;font-size:12px;letter-spacing:.08em;color:var(--muted)">
+      Video not playing? <a href="https://youtu.be/w8qxdLhgOEM" target="_blank" rel="noopener" style="color:var(--accent)">Watch it on YouTube</a>
+    </p>
+  </div>
+</section>
+
+<!-- ============ CLOSING ============ -->
+<section class="section closing">
+  <div class="shell">
+    <div class="section-head reveal">
+      <span class="label">Afterword</span>
+    </div>
+
+    <div class="closing__grid">
+      <div class="closing__body">
+        <h2 class="reveal">We could never have guessed<br>that the weather<br>would turn this savage.</h2>
+        <div class="reveal" data-d="1" style="margin-top:clamp(22px,4vh,34px)">
+          <p>Looking back, the whole thing was very hard. Before we set off we checked the forecast; it was supposed to be sunny. Then a cold front arrived, and everything changed.</p>
+          <p>And because of that challenge, these hundred kilometres are all the more unforgettable.</p>
+          <p>Finally, thank you once more to everyone who fundraised and everyone who donated. Because of you, we finished. And we hope that through this event, these donations reach the people who need them.</p>
+        </div>
+        <div class="sign reveal" data-d="2">
+          Oxfam Trailwalker 2026 · Team 0534<br>
+          NGAN Ping Wong · NG Hiu Kwan · LAU Wai Tak · KAN Sin Hang<br>
+          20–21 November 2026 · 32 h 55 m
+        </div>
+      </div>
+
+      <div class="reveal" data-d="2">
+        <div class="label" style="margin-bottom:18px">Donors · in no particular order</div>
+        <ul class="mini-donors">
+          <li>AU Wai Chun</li>
+          <li>Bee NG</li>
+          <li>CHONG Man Ting</li>
+          <li>CHOW Chi Man</li>
+          <li>CHOY Wa Kwan</li>
+          <li>Christina WOO</li>
+          <li>Elvis KWOK</li>
+          <li>Huang Weiming</li>
+          <li>Irene</li>
+          <li>Krishnamurthi Vishwanath</li>
+          <li>LAU Sau Wan</li>
+          <li>LEE Shu Pang</li>
+          <li>LEUNG Hon Sing</li>
+          <li>Maisy LEUNG</li>
+          <li>Timothy KWAN</li>
+          <li>Virginia PANG</li>
+          <li>ZHAO Qingmei</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="shell">
+    <div class="foot__grid">
+      <div>
+        <b>0534</b>
+        <small>Oxfam Trailwalker 2026 · 100 km<br>32 h 55 m</small>
+      </div>
+      <div>
+        <small>Photographs: teammates, support crews, and along the way<br>With thanks to every donor, support crew, sponsor and volunteer</small>
+      </div>
+      <a class="totop" href="#top">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Enlarged image">
+  <button type="button" aria-label="Close" id="lbClose">×</button>
+  <img alt="" id="lbImg">
+</div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* reveal */
+  var items = document.querySelectorAll('.reveal');
+  if (reduce || !('IntersectionObserver' in window)) {
+    items.forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -12% 0px', threshold: 0.08 });
+    items.forEach(function(el){ io.observe(el); });
+  }
+
+  /* nav state + progress */
+  var nav = document.getElementById('nav');
+  var bar = document.getElementById('progress');
+  var night = document.querySelector('.night');
+  var heroH = window.innerHeight * 0.86;
+
+  function onScroll(){
+    var y = window.scrollY || window.pageYOffset;
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.width = (h > 0 ? (y / h) * 100 : 0) + '%';
+
+    nav.classList.toggle('is-solid', y > heroH);
+    var nr = night.getBoundingClientRect();
+    var inNight = nr.top < 90 && nr.bottom > 90;
+    nav.classList.toggle('is-night', inNight);
+    if (inNight) nav.classList.remove('is-solid');
+  }
+  var ticking = false;
+  window.addEventListener('scroll', function(){
+    if (!ticking){ ticking = true; requestAnimationFrame(function(){ onScroll(); ticking = false; }); }
+  }, { passive: true });
+  window.addEventListener('resize', function(){ heroH = window.innerHeight * 0.86; onScroll(); });
+  onScroll();
+
+  /* film: click to load */
+  var filmFrame = document.getElementById('filmFrame');
+  if (filmFrame){
+    var loadFilm = function(){
+      var id = filmFrame.getAttribute('data-video');
+      var f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0&modestbranding=1';
+      f.title = 'Trailwalker 2026 — the full hundred kilometres';
+      f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      f.setAttribute('allowfullscreen','');
+      f.setAttribute('frameborder','0');
+      filmFrame.innerHTML = '';
+      filmFrame.appendChild(f);
+      filmFrame.removeAttribute('tabindex');
+      filmFrame.style.cursor = 'default';
+    };
+    filmFrame.addEventListener('click', loadFilm);
+    filmFrame.addEventListener('keydown', function(e){
+      if (e.key === 'Enter' || e.key === ' '){ e.preventDefault(); loadFilm(); }
+    });
+  }
+
+  /* lightbox */
+  var lb = document.getElementById('lb');
+  var lbImg = document.getElementById('lbImg');
+  document.querySelectorAll('.fig img').forEach(function(img){
+    img.addEventListener('click', function(){
+      lbImg.src = img.getAttribute('data-full') || img.src;
+      lbImg.alt = img.alt || '';
+      lb.classList.add('on');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+  function closeLb(){
+    lb.classList.remove('on');
+    document.body.style.overflow = '';
+    setTimeout(function(){ lbImg.src = ''; }, 350);
+  }
+  document.getElementById('lbClose').addEventListener('click', closeLb);
+  lb.addEventListener('click', function(e){ if (e.target === lb) closeLb(); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && lb.classList.contains('on')) closeLb(); });
+})();
+</script>
+</body>
+</html>

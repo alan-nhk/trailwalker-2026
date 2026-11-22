@@ -98,6 +98,33 @@ h1,h2,h3,h4,p,figure,blockquote{margin:0}
 }
 @media(min-width:760px){ .nav__links{display:flex} }
 
+/* ============ language switch ============ */
+.nav__right{display:flex;align-items:center;gap:clamp(10px,2vw,22px)}
+.vlang{
+  display:inline-flex;align-items:center;padding:3px;border:1px solid;border-radius:999px;
+  font-family:var(--sans);font-size:13.5px;font-weight:500;letter-spacing:.04em;line-height:1;
+  transition:background .45s var(--ease),border-color .45s var(--ease),color .45s var(--ease);
+  -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+}
+.vlang > *{display:block;padding:8px 14px;border-radius:999px;text-decoration:none;color:inherit;white-space:nowrap}
+.vlang a{opacity:.72;transition:opacity .3s var(--ease)}
+.vlang a:hover{opacity:1}
+.vlang__on{transition:background .45s var(--ease),color .45s var(--ease)}
+/* 未捲：疊在相片上 */
+.nav .vlang{background:rgba(0,0,0,.34);border-color:rgba(255,255,255,.42);color:#fff}
+.nav .vlang__on{background:#fff;color:#16130F}
+/* 捲後：淺色紙底 */
+.nav.is-solid .vlang{background:rgba(255,255,255,.92);border-color:rgba(22,19,15,.22);color:var(--ink)}
+.nav.is-solid .vlang__on{background:var(--ink);color:#F4F1EB}
+/* 夜晚段 */
+.nav.is-night .vlang{background:rgba(255,255,255,.07);border-color:rgba(237,231,220,.34);color:var(--night-ink)}
+.nav.is-night .vlang__on{background:var(--night-ink);color:#0B0A09}
+@media(max-width:600px){
+  .nav__meta{display:none}
+  .vlang{font-size:12.5px}
+  .vlang > *{padding:7px 11px}
+}
+
 /* ============ hero ============ */
 .hero{
   position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;
@@ -442,9 +469,14 @@ html[lang="en"] .film__txt b{letter-spacing:.02em}
     <a href="#thanks">Thanks</a>
     <a href="#story">Story</a>
     <a href="#finish">Finish</a>
-    <a href="index.html" hreflang="zh-Hant-HK" lang="zh-Hant-HK">中文</a>
   </nav>
-  <div class="nav__meta">Trailwalker 2026</div>
+  <div class="nav__right">
+    <div class="vlang" role="group" aria-label="Language">
+      <a href="index.html" hreflang="zh-Hant-HK" lang="zh-Hant-HK">中文</a>
+      <span class="vlang__on" aria-current="page">EN</span>
+    </div>
+    <div class="nav__meta">Trailwalker 2026</div>
+  </div>
 </header>
 
 <main>

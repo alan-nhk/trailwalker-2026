@@ -59,6 +59,7 @@ h1,h2,h3,h4,p,figure,blockquote{margin:0}
 
 /* ============ helpers ============ */
 .shell{width:100%;max-width:var(--shell);margin:0 auto;padding-inline:var(--pad)}
+.nb{white-space:nowrap}
 .label{
   font-family:var(--sans);font-size:11px;font-weight:500;
   letter-spacing:.24em;text-transform:uppercase;color:var(--muted);
@@ -97,6 +98,33 @@ h1,h2,h3,h4,p,figure,blockquote{margin:0}
   color:var(--night-ink);border-bottom:1px solid var(--night-line);
 }
 @media(min-width:760px){ .nav__links{display:flex} }
+
+/* ============ language switch ============ */
+.nav__right{display:flex;align-items:center;gap:clamp(10px,2vw,22px)}
+.vlang{
+  display:inline-flex;align-items:center;padding:3px;border:1px solid;border-radius:999px;
+  font-family:var(--sans);font-size:13.5px;font-weight:500;letter-spacing:.04em;line-height:1;
+  transition:background .45s var(--ease),border-color .45s var(--ease),color .45s var(--ease);
+  -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+}
+.vlang > *{display:block;padding:8px 14px;border-radius:999px;text-decoration:none;color:inherit;white-space:nowrap}
+.vlang a{opacity:.72;transition:opacity .3s var(--ease)}
+.vlang a:hover{opacity:1}
+.vlang__on{transition:background .45s var(--ease),color .45s var(--ease)}
+/* 未捲：疊在相片上 */
+.nav .vlang{background:rgba(0,0,0,.34);border-color:rgba(255,255,255,.42);color:#fff}
+.nav .vlang__on{background:#fff;color:#16130F}
+/* 捲後：淺色紙底 */
+.nav.is-solid .vlang{background:rgba(255,255,255,.92);border-color:rgba(22,19,15,.22);color:var(--ink)}
+.nav.is-solid .vlang__on{background:var(--ink);color:#F4F1EB}
+/* 夜晚段 */
+.nav.is-night .vlang{background:rgba(255,255,255,.07);border-color:rgba(237,231,220,.34);color:var(--night-ink)}
+.nav.is-night .vlang__on{background:var(--night-ink);color:#0B0A09}
+@media(max-width:600px){
+  .nav__meta{display:none}
+  .vlang{font-size:12.5px}
+  .vlang > *{padding:7px 11px}
+}
 
 /* ============ hero ============ */
 .hero{
@@ -428,9 +456,14 @@ h1,h2,h3,h4,p,figure,blockquote{margin:0}
     <a href="#thanks">感謝</a>
     <a href="#story">故事</a>
     <a href="#finish">終點</a>
-    <a href="en.html" hreflang="en" lang="en">EN</a>
   </nav>
-  <div class="nav__meta">毅行者 2026</div>
+  <div class="nav__right">
+    <div class="vlang" role="group" aria-label="語言／Language">
+      <span class="vlang__on" aria-current="page">中文</span>
+      <a href="en.html" hreflang="en" lang="en">EN</a>
+    </div>
+    <div class="nav__meta">毅行者 2026</div>
+  </div>
 </header>
 
 <main>
@@ -442,7 +475,7 @@ h1,h2,h3,h4,p,figure,blockquote{margin:0}
   </div>
   <div class="hero__inner">
     <div class="hero__kicker">樂施毅行者 2026 · 隊號 0534</div>
-    <h1>一百公里，<br>四個人，<br>一個<em>沒有說出口</em>的承諾。</h1>
+    <h1>一百公里，<br>四個人，<br>一個<em>沒有說出口</em>的<span class="nb">承諾。</span></h1>
     <p class="hero__sub">2026 年 11 月 20 日至 21 日。我們用了 32 小時 55 分，走完這一百公里。這頁，是寫給每一位捐款人的。</p>
     <div class="hero__stats">
       <div class="hero__stat"><b>100</b><span>公里</span></div>
